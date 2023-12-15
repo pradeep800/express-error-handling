@@ -7,7 +7,6 @@ app.get("/", (req, res) => {
 
 // Error handling middleware
 app.use((err, res) => {
-  console.error(err.stack);
   res.status(500).send("Something went wrong!");
 });
 
